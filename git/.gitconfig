@@ -1,0 +1,22 @@
+[user]
+	email = james.pettit@gmail.com
+[log]
+	# Default to showing abbreviated commit hashes
+	abbrevCommit = true
+[diff]
+	# Use the patience algorithm for diffs, which is slower but generally better
+	algorithm = patience
+[alias]
+	# List current aliases
+	alias = "!git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | grep -v ^'alias '"
+	# View entire history graph
+	lg = log --pretty=oneline --graph
+	# View abbreviated history graph
+	lgs = "!git -P log --pretty=oneline -n 20 --graph"
+	# View abbreviated git status
+	ss = status -s
+
+	# Make a new fixup commit
+	fix = commit --fixup
+[core]
+	excludesfile = /Users/james/.gitignore
