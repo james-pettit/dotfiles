@@ -20,3 +20,5 @@
 	fix = commit --fixup
 [core]
 	excludesfile = /Users/james/.gitignore
+[credential]
+	helper = store
