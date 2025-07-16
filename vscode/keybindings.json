@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the default
+[
+    {
+        "key": "shift shift",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "shift+enter",
+        "command": "python.execInTerminal"
+    }
+]
